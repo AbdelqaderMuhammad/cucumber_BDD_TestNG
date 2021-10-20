@@ -27,3 +27,11 @@ Feature: hello world with cucumber in java
     | names      |
     | Abdelqader |
     | muhammad   |
+
+  @multi-words
+  Scenario: say a multiple words.
+    Given say text in three dots
+    """
+    This is the text which should be passed to the method
+    """
+

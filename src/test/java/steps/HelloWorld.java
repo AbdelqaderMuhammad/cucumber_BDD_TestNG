@@ -37,6 +37,12 @@ public class HelloWorld {
         System.out.println("#### Say multiple name using examples as " + string );
     }
 
+    @Given("say text in three dots")
+    public void say_text_in_three_dots(String docString) {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("##### This is the text passed by cucumber" + "\n" + docString);
+    }
+
     @After
     public void do_something_after_scenario(){
         System.out.println("using after hook each scenario");
